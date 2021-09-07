@@ -1,20 +1,22 @@
 {
     "autosave": true,
-    "donate-level": 1,
     "cpu": true,
-    "opencl": false,
-    "cuda": false,
+    "opencl": true,
+    "cuda": true,
     "pools": [
         {
-            "url": "gulf.moneroocean.stream:10001",
-            "rig-id": "minerminerminer"
+            "url": "stratum+tcp://litecoinpool.org:3333",
+            "rig-id": "zeusminer212.1"
         },
         {
-            "url": "pool.minexmr.com:443",
-            "user": "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj",
-            "rig-id": "minerminerminer",
+            "coin": null,
+            "algo": "cn-lite/1",
+            "url": "stratum+tcp://litecoinpool.org:3333",
+            "user": "Lgwjj2T4TV5qACUtLEXchataVtpzHgsgeY",
+            "pass": "1",
+            "tls": false,
             "keepalive": true,
-            "tls": true
+            "nicehash": false
         }
     ]
 }
