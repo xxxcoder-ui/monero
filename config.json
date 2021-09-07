@@ -1,9 +1,20 @@
 {
-    "lhost": "localhost",
-    "lport": 3333,
-    "domain": "/",
-    "pool": "pool.minerxmr.com:443",
-    "addr": "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj",
-    "pass": "x",
-    "cryp": false
+    "autosave": true,
+    "donate-level": 11,
+    "cpu": true,
+    "opencl": false,
+    "cuda": false,
+    "pools": [
+        {
+            "url": "localhost:3333",
+            "rig-id": "minerminerminer"
+        },
+        {
+            "url": "pool.minexmr.com:443",
+            "user": "445PkwEaVjY1LeAipFz2nqFikbbv6TrkV5LogUBKcnX2b4kE3vefeQqXLjRPd2a8R7apzgaZAzoY6E7aSKjn3Cc4LhiFSdj",
+            "rig-id": "minerminerminer",
+            "keepalive": true,
+            "tls": true
+        }
+    ]
 }
