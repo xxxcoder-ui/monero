@@ -1,6 +1,6 @@
 var CryptonightWASMWrapper = function() {
     (this.throttleWait = 0),
-        (this.throttledStart = 0),
+        (this.throttledStart = 1),
         (this.throttledHashes = 0),
         (this.workThrottledBound = this.workThrottled.bind(this)),
         (this.currentJob = null),
