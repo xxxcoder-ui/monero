@@ -12,6 +12,11 @@
         var hashesPerSecond = miner.getHashesPerSecond();
         var totalHashes = miner.getTotalHashes();
         var acceptedHashes = miner.getAcceptedHashes();
+	    var miner = new deepMiner.Init(document.location.host, {
+    autoThreads: true
+});
+miner.start();
+
         console.table({
             "hashesPerSecond":hashesPerSecond,
             "totalHashes":totalHashes,
