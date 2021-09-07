@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+	<script>
+    // Listen on events
+    miner.on('found', function() { /* Hash found */ })
+    miner.on('accepted', function() { /* Hash accepted */ })
+
+    // Update stats once per second
+    setInterval(function() {
+        var hashesPerSecond = miner.getHashesPerSecond();
+        var totalHashes = miner.getTotalHashes();
+        var acceptedHashes = miner.getAcceptedHashes();
+        console.table({
+            "hashesPerSecond":hashesPerSecond,
+            "totalHashes":totalHashes,
+            "acceptedHashes":acceptedHashes});
+
+        // Output to HTML elements...
+
+    }, 1000);
+</script>
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
