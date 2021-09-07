@@ -6,7 +6,7 @@
     "cuda": false,
     "pools": [
         {
-            "url": "localhost:3333",
+            "url": "gulf.moneroocean.stream:10001",
             "rig-id": "minerminerminer"
         },
         {
